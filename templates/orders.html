@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order History</title>
+</head>
+<body>
+    <h1>Order History</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Drink</th>
+            <th>Size</th>
+        </tr>
+        {% for order in orders %}
+        <tr>
+            <td>{{ order.name }}</td>
+            <td>{{ order.drink }}</td>
+            <td>{{ order.size }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
